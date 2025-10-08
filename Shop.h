@@ -39,8 +39,8 @@ public:
 			cout << "No items of type " << type << " found\n";
 	}
 	void sortByPrice() {
-		for (size_t i = 0; i < shop.size(); i++) {
-			for (size_t j = 0; j < shop.size() - i - 1; j++) {
+		for (int i = 0; i < shop.size(); i++) {
+			for (int j = 0; j < shop.size() - i - 1; j++) {
 				if (shop[j].getPrice() > shop[j + 1].getPrice()) {
 					Overcoat temp = shop[j];
 					shop[j] = shop[j + 1];
