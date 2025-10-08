@@ -41,7 +41,7 @@ public:
 	void sortByPrice() {
 		for (int i = 0; i < shop.size(); i++) {
 			for (int j = 0; j < shop.size() - i - 1; j++) {
-				if (shop[j].getPrice() > shop[j + 1].getPrice()) {
+				if (shop[j] > shop[j + 1]) {
 					Overcoat temp = shop[j];
 					shop[j] = shop[j + 1];
 					shop[j + 1] = temp;
